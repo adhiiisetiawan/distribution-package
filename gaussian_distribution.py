@@ -16,7 +16,7 @@ class Gaussian(Distribution):
   """
 
   def __init__(self, mu=0, sigma=1):
-    Distribution.__init__(mu, sigma)
+    Distribution.__init__(self, mu, sigma)
 
   def calculate_mean(self):
     """Function to calculate the mean of the data set.
@@ -27,7 +27,7 @@ class Gaussian(Distribution):
 		Returns:
 			float: mean of the data set
     """
-    avg = sum(self.data) / len(self.data)
+    avg = 1.0 * sum(self.data) / len(self.data)
     self.mean = avg
 
     return self.mean
