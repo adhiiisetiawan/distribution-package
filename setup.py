@@ -6,4 +6,4 @@ setup(name='distributions',
       version='0.1',
       description='Gaussian Distributions',
       packages=['distributions'],
-      zip_safe='False')
+      zip_safe=False)
